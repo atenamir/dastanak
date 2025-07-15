@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #a8d5ba;
+  --color-secondary: #2d6a4f;
+  --color-accent: #74c69d;
+  --color-background: #f9faf7;
+  --color-darkbg: #19232d;
+  --color-darkprimary: #17594a;
+  --color-darktext: #f1f1f1;
+  --font-vazir :url("https://cdn.jsdelivr.net/npm/vazir-font@31.0.0/dist/font-face.css")
+}
+
