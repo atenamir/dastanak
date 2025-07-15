@@ -2,11 +2,12 @@
 
 @theme {
   --color-primary: #a8d5ba;
-  --color-secondary: #2d6a4f;
+  --color-secondary: #5d916e;
   --color-accent: #74c69d;
   --color-background: #f9faf7;
-  --color-darkbg: #19232d;
+  --color-dark-primary: #1a3629;
   --color-darkprimary: #17594a;
+  --color-dark-bg:#1b2621;
   --color-darktext: #f1f1f1;
   --font-vazir :url("https://cdn.jsdelivr.net/npm/vazir-font@31.0.0/dist/font-face.css")
 }
