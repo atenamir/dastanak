@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
-@import url("https://cdn.jsdelivr.net/npm/vazir-font@31.0.0/dist/font-face.css");
+@font-face {
+  font-family:vazir ;
+  src: url(../../public/vazir-font-v16.1.0/Vazir-Medium.eot),
+  url(../../public//vazir-font-v16.1.0/Vazir-Medium.ttf) ,
+  url(../../public/vazir-font-v16.1.0/Vazir-Medium.woff),
+  url(../../public/vazir-font-v16.1.0/Vazir-Medium.woff2);
+}
 
 @theme {
   --color-primary: #a8d5ba;
@@ -14,7 +20,7 @@
 }
 
 body{
-  font-family: 'Vazir', Tahoma;
+  font-family: vazir !important;
 }
 
 
