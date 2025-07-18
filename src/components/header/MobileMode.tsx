@@ -8,12 +8,13 @@ import { IoHomeOutline , IoBonfireOutline, IoBookOutline} from "react-icons/io5"
 import { CiUser } from "react-icons/ci";
 import { GrNext } from "react-icons/gr";
 import Searchbar from "./Searchbar";
+import Link from "next/link";
 
 const menuItems = [
   { label: "خانه", href: "/" , icon: <IoHomeOutline />},
   { label: "داغ‌ترین‌ها", href: "/hot" ,icon: <IoBonfireOutline />},
   { label: "داستان‌ها", href: "/stories" ,icon: <IoBookOutline />},
-  { label: "پروفایل", href: "/profile" ,icon: <CiUser />},
+  { label: "پروفایل", href: "/login" ,icon: <CiUser />},
 ];
 
 function MobileMode() {
@@ -31,7 +32,9 @@ function MobileMode() {
           <IoIosMenu className="text-3xl cursor-pointer" />
         </motion.button>
         <Searchbar />
+         <Link href="/">
           <Image src={logo} width={100} alt="داستانک" />
+         </Link>
           
       </nav>
       <AnimatePresence>
@@ -66,14 +69,14 @@ function MobileMode() {
               <ul className="space-y-6 mt-4 font-semibold">
                 {menuItems.map(item => (
                   <li key={item.href} className="border-b py-1 border-b-gray-100/30 ">
-                    <a
+                    <Link
                       href={item.href}
                       className="flex items-center py-2 px-2 rounded hover:bg-accent/40 transition"
                       onClick={() => setOpen(false)}
                     >
                       <span className="text-xl mx-2">{item.icon}</span>
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
